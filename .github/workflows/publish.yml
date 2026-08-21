@@ -1,0 +1,33 @@
+# 发布 CNSH 规范到 GitHub Pages
+# License: MulanPSL v2
+# DNA: #龍芯⚡️2026-08-21-CNSH-CICD-v1.0-UID9622
+
+name: Publish CNSH Spec
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build Spec
+        run: |
+          mkdir -p dist
+          cp -r docs/ dist/
+          cp README.md dist/
+          cp LICENSE dist/
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: gh-pages

@@ -1,0 +1,26 @@
+# CNSH Spec — 忽略文件
+# License: MulanPSL v2
+# DNA: #龍芯⚡️2026-08-21-CNSH-GITIGNORE-v1.0-UID9622
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Node
+node_modules/
+
+# 构建产物
+dist/
+build/
+
+# 系统
+.DS_Store
+Thumbs.db
+
+# 密钥（永不入库）
+*.pem
+*.key
+*.gpg
+.ssh/
