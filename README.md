@@ -77,8 +77,19 @@ DNA: #龍芯⚡️2026-08-21-HELLO
 ## 参与方式
 
 - 阅读完整文档：[INDEX.md](./docs/INDEX.md)
-- 提交 Issue 反馈
 - Fork 仓库并 PR
+
+## 反馈渠道（社区入口）
+
+遇到问题 / 有想法 / 试玩 CNSH 后的第一手感受，通过 GitHub Issue 提交，我们逐条回复：
+
+| 反馈类型 | 直达入口 | 说明 |
+|:---|:---|:---|
+| 🐛 语法缺陷 | [提交 Bug 报告](https://github.com/UID9622/cnsh-spec/issues/new?assignees=&labels=bug&template=01_bug_report.md) | 解析/执行出错 |
+| 💡 功能建议 | [提交功能建议](https://github.com/UID9622/cnsh-spec/issues/new?assignees=&labels=enhancement&template=02_feature_request.md) | 新语法/工具链想法 |
+| 🧪 试用反馈 | [提交试用反馈](https://github.com/UID9622/cnsh-spec/issues/new?assignees=&labels=feedback&template=03_trial_feedback.md) | 上手体验 · 外部验证闭环 |
+
+> 龍魂体系承诺：**数据主权归你**。反馈中请勿包含密钥、隐私等敏感信息。
 
 ---
 
